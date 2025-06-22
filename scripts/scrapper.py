@@ -40,13 +40,18 @@ async def main():
     os.makedirs(media_dir, exist_ok=True)
 
     # Open the CSV file and prepare the writer
-    with open('telegram_data.csv', 'w', newline='', encoding='utf-8') as file:
+    with open('Leyueqa_telegram_data.csv', 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(['Channel Title', 'Channel Username', 'ID', 'Message', 'Date', 'Media Path'])  # Include channel title in the header
         
         # List of channels to scrape
         channels = [
-            '@MerttEka',  # Selected channel to scrape            
+             #'@MerttEka',
+            #  '@ZemenExpress' ,
+            #  "@nevacomputer",
+            #    "@meneshayeofficial",
+              " @Leyueqa"
+                # Selected channel to scrape            
         ]
         
         # Iterate over channels and scrape data into the single CSV file
